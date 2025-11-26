@@ -1,0 +1,17 @@
+# TODO:Add Discord
+# BECOME password is my sudo password
+---
+- name: Machine setup
+  hosts: localhost
+  become: true
+  connection: local
+  gather_facts: true
+
+  tasks:
+    - name: Install packages
+      ansible.builtin.package:
+        name:
+          - pgcli
+          - skopeo
+        state: present
+
