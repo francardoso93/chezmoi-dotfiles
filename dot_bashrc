@@ -10,3 +10,12 @@ source ~/.local/share/omarchy/default/bash/rc
 # Make an alias for invoking commands you use constantly
 # alias p='python'
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+. "$HOME/.atuin/bin/env"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"
+
+# Tab autocomplete selection
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
