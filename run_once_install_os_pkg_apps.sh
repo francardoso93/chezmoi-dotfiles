@@ -30,7 +30,7 @@ else
 fi
 
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
-echo "Atuin installed through recommended script"
+echo "atuin installed through recommended script"
 
 ansible-playbook ~/.bootstrap/setup.yml --ask-become-pass
 echo "Apps install through Ansible playbook completed."
