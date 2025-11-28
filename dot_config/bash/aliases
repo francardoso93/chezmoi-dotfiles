@@ -2,6 +2,8 @@
 
 # k8s aliases
 alias k="kubectl"
+source <(kubectl completion bash)
+complete -F __start_kubectl k
 alias kp1='k --context "sonder-prod-1/kube-admin"'
 alias kp1-stern='k stern --context "sonder-prod-1/kube-admin"'
 
