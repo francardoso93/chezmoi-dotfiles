@@ -5,10 +5,6 @@
 # (don't mess with these directly, just overwrite them here!)
 source ~/.local/share/omarchy/default/bash/rc
 
-# Add your own exports, aliases, and functions here.
-#
-# Make an alias for invoking commands you use constantly
-# alias p='python'
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 . "$HOME/.atuin/bin/env"
@@ -18,4 +14,4 @@ eval "$(atuin init bash)"
 
 source "$HOME/.config/bash/aliases"
 source "$HOME/.config/bash/functions"
-source "$HOME/.config/bash/completions"
+

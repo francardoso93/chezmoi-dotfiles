@@ -1,6 +1,1 @@
-# Completions
-source <(kubectl completion bash)
-source <(kubectl-ai completion bash)
-source <(helm completion bash)
-source <(pulumi gen-completion bash)
 
