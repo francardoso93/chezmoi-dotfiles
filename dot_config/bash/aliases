@@ -1,0 +1,7 @@
+# Generic aliases
+
+# k8s aliases
+alias k="kubectl"
+alias kp1='k --context "sonder-prod-1/kube-admin"'
+alias kp1-stern='k stern --context "sonder-prod-1/kube-admin"'
+

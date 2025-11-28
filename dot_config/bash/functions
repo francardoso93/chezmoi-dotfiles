@@ -1,0 +1,20 @@
+# Functions
+kubectl() {
+  # call the real kubectl (use `command` to avoid recursive function call)
+  command kubectl "$@"
+  # set env var that starship can detect
+  export STARSHIP_SHOW_K8S=1
+}
+
+killport() {
+  PID=$(sudo lsof -t -i:$1)
+  sudo kill -9 ${PID}
+}
+
+gitresetsoftall() {
+  export TARGET_BRANCH=$(git rev-parse --abbrev-ref HEAD); git checkout main; git pull; git checkout $TARGET_BRANCH; git merge main; git reset --soft HEAD~$(git rev-list --left-right --count main...$TARGET_BRANCH | awk '{print $2}')
+}
+
+dotfiles() {
+  nvim /home/francisco/.local/share/chezmoi/
+}

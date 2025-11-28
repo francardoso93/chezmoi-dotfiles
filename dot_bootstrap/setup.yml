@@ -13,5 +13,6 @@
         name:
           - pgcli
           - skopeo
+          - bash-language-server
         state: present
 
