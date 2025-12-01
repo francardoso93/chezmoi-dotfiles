@@ -1,5 +1,8 @@
 # Generic aliases
 
+# AI aliases
+alias c='copilot -p'
+
 # k8s aliases
 alias k="kubectl"
 source <(kubectl completion bash)

@@ -23,6 +23,7 @@ install_mise_global_packages() {
   muse argo
   muse argo-rollouts
   muse claude
+  muse gemini
 }
 
 install_go_tools() {
