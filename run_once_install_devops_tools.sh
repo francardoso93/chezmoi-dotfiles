@@ -22,6 +22,7 @@ install_mise_global_packages() {
   muse github-cli
   muse argo
   muse argo-rollouts
+  muse claude
 }
 
 install_go_tools() {
