@@ -29,6 +29,7 @@ else
   echo "SSH key already exists, skipping ssh-keygen."
 fi
 
+# atuin stores shell history in a secure cloud
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 echo "atuin installed through recommended script"
 

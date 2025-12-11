@@ -49,5 +49,30 @@ Chezmoi supports encrypted secrets using gpg, age, or pass. Example:
 
     chezmoi secret add mytoken
 
+# Pass
+
+I'm using `pass` to store my local secrets through gpg. It requires some manual steps:
+
+```
+# Manual steps:
+gpg --full-generate-key # This is required to use 'pass', so it can store secrets on my chip. OR
+gpg --batch --generate-key <<EOF
+Key-Type: RSA
+Key-Length: 4096
+Subkey-Type: RSA
+Subkey-Length: 4096
+Name-Real: Francisco Cardoso
+Name-Email: francardoso@outlook.com
+Expire-Date: 0
+%commit
+EOF
+
+gpg --list-secret-keys --keyid-format LONG
+# You’ll see something like:
+sec   rsa4096/ABCDEF1234567890 2025-01-10 [SC]
+
+pass init ABCDEF1234567890
+```
+
 ## TODOs:
 - Other distirbutions. I've started this for my Omarchy setup, but it can be reused on Ubuntu with small tweaks (eg: start by checking if MISE in installed, install it otherwise through ansible playbook)

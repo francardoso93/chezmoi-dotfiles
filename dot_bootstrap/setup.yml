@@ -14,5 +14,6 @@
           - pgcli
           - skopeo
           - bash-language-server
+          - pass
         state: present
 
