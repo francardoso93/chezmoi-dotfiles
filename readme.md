@@ -51,7 +51,7 @@ Chezmoi supports encrypted secrets using gpg, age, or pass. Example:
 
 # Pass
 
-I'm using `pass` to store my local secrets through gpg. It requires some manual steps:
+I'm using `pass` to store my local secrets. gpg encrypts/decrypts them. It requires some manual steps:
 
 ```
 # Manual steps:
