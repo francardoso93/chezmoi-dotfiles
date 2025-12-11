@@ -16,5 +16,6 @@ gitresetsoftall() {
 }
 
 dotfiles() {
-  nvim /home/francisco/.local/share/chezmoi/
+  cd  /home/francisco/.local/share/chezmoi/
+  nvim .
 }

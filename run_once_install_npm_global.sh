@@ -6,4 +6,3 @@ n() {
 }
 
 n @github/copilot
-
