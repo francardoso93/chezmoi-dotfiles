@@ -55,7 +55,6 @@ I'm using `pass` to store my local secrets through gpg. It requires some manual 
 
 ```
 # Manual steps:
-gpg --full-generate-key # This is required to use 'pass', so it can store secrets on my chip. OR
 gpg --batch --generate-key <<EOF
 Key-Type: RSA
 Key-Length: 4096
@@ -69,9 +68,9 @@ EOF
 
 gpg --list-secret-keys --keyid-format LONG
 # You’ll see something like:
-sec   rsa4096/ABCDEF1234567890 2025-01-10 [SC]
+# sec   rsa4096/ABCDEF1234567890 2025-01-10 [SC]
 
-pass init ABCDEF1234567890
+# pass init ABCDEF1234567890
 ```
 
 ## TODOs:
