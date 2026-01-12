@@ -73,5 +73,11 @@ gpg --list-secret-keys --keyid-format LONG
 # pass init ABCDEF1234567890
 ```
 
+# Nvim 
+
+## GH copliot
+
+Must run `:Copilot signin`
+
 ## TODOs:
 - Other distirbutions. I've started this for my Omarchy setup, but it can be reused on Ubuntu with small tweaks (eg: start by checking if MISE in installed, install it otherwise through ansible playbook)
