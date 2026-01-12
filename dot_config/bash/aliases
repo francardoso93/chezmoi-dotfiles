@@ -1,7 +1,8 @@
 # Generic aliases
 
 # AI aliases
-alias c='copilot -p'
+# alias 'c' is now OPENCODE by default
+alias gc='copilot -p'
 
 # k8s aliases
 alias k="kubectl"
