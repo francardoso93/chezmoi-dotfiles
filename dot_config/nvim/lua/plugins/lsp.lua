@@ -5,6 +5,7 @@ return {
       servers = {
         helm_ls = {},
         terraform_ls = {},
+        ts_ls = {},
       },
     },
   },
