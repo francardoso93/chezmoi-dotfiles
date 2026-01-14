@@ -15,5 +15,5 @@
           - skopeo
           - bash-language-server
           - pass
+          - lsof
         state: present
-

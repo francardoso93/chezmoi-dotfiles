@@ -1,4 +1,5 @@
 -- Source: https://github.com/NickvanDyke/opencode.nvim
+-- Dependecy: 'lsof' must be installed on OS level for opencode.nvim to work.
 return {
   {
     "NickvanDyke/opencode.nvim",
