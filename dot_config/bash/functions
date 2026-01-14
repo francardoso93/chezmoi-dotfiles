@@ -19,3 +19,8 @@ dotfiles() {
   cd  /home/francisco/.local/share/chezmoi/
   nvim .
 }
+
+projects() {
+    cd /home/francisco/projects/
+}
+
