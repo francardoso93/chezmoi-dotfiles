@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+set -eo pipefail
 
 # Allow install scripts to bypass interactive check in .bashrc
 export CHEZMOI_INSTALL_RUNNING=1

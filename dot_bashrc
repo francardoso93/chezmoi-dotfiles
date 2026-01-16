@@ -2,7 +2,6 @@
 # Skip interactive check during install scripts
 if [[ -n "${CHEZMOI_INSTALL_RUNNING:-}" ]]; then
   echo "Skipping interactive check during install..."
-  PROMPT_COMMAND="${PROMPT_COMMAND:-}"
 elif [[ $- != *i* ]]; then
   return
 fi

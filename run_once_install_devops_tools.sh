@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+set -eo pipefail
 
 # Allow install scripts to bypass interactive check in .bashrc
 export CHEZMOI_INSTALL_RUNNING=1
@@ -45,9 +45,6 @@ install_kubectl_plugins() {
 }
 
 refresh_bash(){
-  set +u
-  source ~/.bashrc
-  set -u
   eval "$(mise activate bash)"
 }
 
