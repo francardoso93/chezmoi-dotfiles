@@ -13,7 +13,8 @@ OS="$(uname -s)"
 case "${OS}" in
     Linux*)
         if [ -f /etc/arch-release ] && [ -d "$HOME/.local/share/omarchy" ]; then
-            install_ansible_on_arch_omarchy
+          sudo pacman -Sy
+          install_ansible_on_arch_omarchy
         else
             echo "Unsupported Linux distribution"
             exit 1
@@ -36,6 +37,7 @@ fi
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 echo "atuin installed through recommended script"
 
+eval "$(mise activate bash)"
 ansible-playbook ~/.bootstrap/setup.yml --ask-become-pass
 echo "Apps install through Ansible playbook completed."
 
