@@ -10,4 +10,5 @@ case "${OS}" in
         if [ -f /etc/arch-release ]; then
           yay -S slack-desktop --noconfirm
 fi
+esac
 
