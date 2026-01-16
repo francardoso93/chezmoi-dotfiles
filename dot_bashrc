@@ -9,15 +9,15 @@ fi
 
 # All the default Omarchy aliases and functions
 # (don't mess with these directly, just overwrite them here!)
-# source ~/.local/share/omarchy/default/bash/rc
+source ~/.local/share/omarchy/default/bash/rc
 
-# export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-# . "$HOME/.atuin/bin/env"
+. "$HOME/.atuin/bin/env"
 
-# [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
-# eval "$(atuin init bash)"
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"
 
-# source "$HOME/.config/bash/aliases"
-# source "$HOME/.config/bash/functions"
+source "$HOME/.config/bash/aliases"
+source "$HOME/.config/bash/functions"
 
