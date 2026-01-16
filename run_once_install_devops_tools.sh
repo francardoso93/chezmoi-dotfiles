@@ -1,6 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
+# Allow install scripts to bypass interactive check in .bashrc
+export CHEZMOI_INSTALL_RUNNING=1
+
 # Allows current shell to use the installed tools (eg: go, kubectl)
 mise activate bash
 
@@ -31,7 +34,7 @@ install_go_tools() {
   go install -v github.com/go-delve/delve/cmd/dlv@latest
 }
 
-install_kubect_plugins() {
+install_kubectl_plugins() {
   mkdir -p "$HOME/.local/bin"
   ln -sf "/home/francisco/.local/share/mise/installs/krew/0.4.5/krew" "$HOME/.local/bin/kubectl-krew"
   export PATH="$HOME/.local/bin:$PATH"
@@ -41,7 +44,15 @@ install_kubect_plugins() {
   kubectl krew install ai
 }
 
+refresh_bash(){
+  set +u
+  source ~/.bashrc
+  set -u
+  eval "$(mise activate bash)"
+}
+
 install_mise_global_packages
+refresh_bash
 install_go_tools
-install_kubect_plugins
+install_kubectl_plugins
 

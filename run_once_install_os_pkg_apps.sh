@@ -1,6 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
+# Allow install scripts to bypass interactive check in .bashrc
+export CHEZMOI_INSTALL_RUNNING=1
+
 install_ansible_on_arch_omarchy() {
   mise use --global pipx
   mise use --global ansible

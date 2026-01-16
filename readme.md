@@ -1,4 +1,4 @@
-Reference: https://github.com/logandonley/dotfiles
+Reference: <https://github.com/logandonley/dotfiles>
 
 # My Chezmoi Dotfiles
 
@@ -7,6 +7,7 @@ This repository contains my dotfiles managed with chezmoi. It lets me keep my de
 ## Requirements
 
 - Git
+- SSH configuration (ssh-keygen)
 - Chezmoi installed (via package manager eg `mise use --global chezmoi`)
 
 ## Quick Start
@@ -14,7 +15,6 @@ This repository contains my dotfiles managed with chezmoi. It lets me keep my de
 Initialize chezmoi using this repo:
 
     chezmoi init --apply git@github.com:francardoso93/chezmoi-dotfiles.git
-
 
 ## Updating Your Dotfiles
 
@@ -73,11 +73,12 @@ gpg --list-secret-keys --keyid-format LONG
 # pass init ABCDEF1234567890
 ```
 
-# Nvim 
+# Nvim
 
 ## GH copliot
 
 Must run `:Copilot signin`
 
-## TODOs:
+## TODOs
+
 - Other distirbutions. I've started this for my Omarchy setup, but it can be reused on Ubuntu with small tweaks (eg: start by checking if MISE in installed, install it otherwise through ansible playbook)
