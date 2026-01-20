@@ -10,6 +10,8 @@ case "${OS}" in
         if [ -f /etc/arch-release ]; then
           yay -S slack-desktop --noconfirm
           yay -S awsvpnclient --noconfirm
-fi
+          sudo systemctl --now enable systemd-resolved.service
+          sudo systemctl --now enable awsvpnclient
+        fi
 esac
 
