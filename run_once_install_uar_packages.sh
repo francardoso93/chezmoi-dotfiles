@@ -9,6 +9,7 @@ case "${OS}" in
     Linux*)
         if [ -f /etc/arch-release ]; then
           yay -S slack-desktop --noconfirm
+          yay -S awsvpnclient --noconfirm
 fi
 esac
 
