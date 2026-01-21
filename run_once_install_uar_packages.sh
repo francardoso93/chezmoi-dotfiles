@@ -10,8 +10,10 @@ case "${OS}" in
         if [ -f /etc/arch-release ]; then
           yay -S slack-desktop --noconfirm
           yay -S awsvpnclient --noconfirm
+          # Those steps are required by awsvpnclient to use DNS servers from VPN
           sudo systemctl --now enable systemd-resolved.service
           sudo systemctl --now enable awsvpnclient
+          #
         fi
 esac
 
