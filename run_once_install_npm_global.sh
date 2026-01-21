@@ -9,4 +9,4 @@ n() {
 }
 
 n @github/copilot
-
+n husky
