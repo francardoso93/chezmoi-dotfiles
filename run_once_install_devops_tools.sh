@@ -53,3 +53,6 @@ refresh_bash
 install_go_tools
 install_kubectl_plugins
 
+# Granted - To easily assume different AWS IAM roles
+curl -OL releases.commonfate.io/granted/v0.36.2/granted_0.36.2_linux_x86_64.tar.gz
+sudo tar -zxvf ./granted_0.36.2_linux_x86_64.tar.gz -C /usr/local/bin/
