@@ -20,3 +20,5 @@ eval "$(atuin init bash)"
 source "$HOME/.config/bash/aliases"
 source "$HOME/.config/bash/functions"
 
+export GRANTED_ALIAS_CONFIGURED="true"
+
