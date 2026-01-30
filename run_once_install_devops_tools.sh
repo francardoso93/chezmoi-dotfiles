@@ -27,6 +27,7 @@ install_mise_global_packages() {
   muse argo-rollouts
   muse claude
   muse gemini
+  muse opentofu
 }
 
 install_go_tools() {
