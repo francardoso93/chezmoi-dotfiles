@@ -16,4 +16,5 @@
           - bash-language-server
           - pass
           - lsof
+          - bind # dig
         state: present
