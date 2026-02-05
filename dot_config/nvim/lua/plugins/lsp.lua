@@ -4,7 +4,21 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      servers = {},
+      servers = {
+        yamlls = {
+          settings = {
+            yaml = {
+              schemas = {
+                -- ArgoCD Application CRD schema
+                ["https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/argoproj.io/application_v1alpha1.json"] = {
+                  "/**/templates/**/*.yaml",
+                  "/**/templates/**/*.yml",
+                },
+              },
+            },
+          },
+        },
+      },
     },
   },
 }

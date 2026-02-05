@@ -13,4 +13,4 @@ alias kp1-stern='k stern --context "sonder-prod-1/kube-admin"'
 
 # Granted assume
 alias assume=". assume"
-
+alias ac=". assume"
