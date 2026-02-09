@@ -17,4 +17,5 @@
           - pass
           - lsof
           - bind # dig
+          - openbsd-netcat
         state: present
