@@ -8,7 +8,6 @@ OS="$(uname -s)"
 case "${OS}" in
     Linux*)
         if [ -f /etc/arch-release ]; then
-          yay -S postin --noconfirm
           yay -S slack-desktop-wayland --noconfirm
           yay -S awsvpnclient --noconfirm
           # Those steps are required by awsvpnclient to use DNS servers from VPN

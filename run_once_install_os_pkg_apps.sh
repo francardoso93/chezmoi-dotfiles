@@ -41,3 +41,9 @@ eval "$(mise activate bash)"
 ansible-playbook ~/.bootstrap/setup.yml --ask-become-pass
 echo "Apps install through Ansible playbook completed."
 
+# posting is a TUI API client
+curl -LsSf https://astral.sh/uv/install.sh | sh
+export PATH="$HOME/.local/bin:$PATH"
+uv tool install --python 3.12 posting
+
+
