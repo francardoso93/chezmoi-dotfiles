@@ -22,3 +22,6 @@ source "$HOME/.config/bash/aliases"
 source "$HOME/.config/bash/functions"
 
 export GRANTED_ALIAS_CONFIGURED="true"
+
+# Atuin: Write history after each command + read new lines from other shells
+PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
