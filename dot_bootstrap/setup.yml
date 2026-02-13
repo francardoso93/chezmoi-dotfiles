@@ -18,4 +18,5 @@
           - lsof
           - bind # dig
           - openbsd-netcat
+          - cloudflared
         state: present
