@@ -83,6 +83,8 @@ Must run `:Copilot signin`
 
 Edit  `/etc/docker/daemon.json`. On DNS property, add Cloudflare DNS Server resolver 1.1.1.1
 
+Mandatory `sudo systemctl restart docker`
+
 # TODOs
 
 - Other distirbutions. I've started this for my Omarchy setup, but it can be reused on Ubuntu with small tweaks (eg: start by checking if MISE in installed, install it otherwise through ansible playbook)
