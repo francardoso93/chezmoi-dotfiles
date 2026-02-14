@@ -79,6 +79,10 @@ gpg --list-secret-keys --keyid-format LONG
 
 Must run `:Copilot signin`
 
-## TODOs
+# Docker DNS issues (required --network bridge)
+
+Edit  `/etc/docker/daemon.json`. On DNS property, add Cloudflare DNS Server resolver 1.1.1.1
+
+# TODOs
 
 - Other distirbutions. I've started this for my Omarchy setup, but it can be reused on Ubuntu with small tweaks (eg: start by checking if MISE in installed, install it otherwise through ansible playbook)
