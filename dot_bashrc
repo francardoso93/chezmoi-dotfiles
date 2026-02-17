@@ -27,3 +27,6 @@ export GRANTED_ALIAS_CONFIGURED="true"
 PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
 
 . "$HOME/.local/share/../bin/env"
+if [ -z "${NVIM-}" ]; then
+   nt
+fi
