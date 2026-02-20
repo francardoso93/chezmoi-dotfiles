@@ -20,4 +20,5 @@
           - openbsd-netcat
           - cloudflared
           - doctl
+          - websocat
         state: present
