@@ -29,3 +29,6 @@ export GRANTED_ALIAS_CONFIGURED="true"
 # export TF_VAR_digital_ocean_token=$(pass show ai-agents-do-token)
 # export TF_VAR_ssh_private_key_b64=$(pass show argocd-gh-ssh-private-key-encoded)
 
+
+export PINCLAW_API_URL="https://pinclaw.devpinata.cloud/ops/api/v0"
+# export PINCLAW_API_AUTH=$(pass show pinclaw-api-key)
