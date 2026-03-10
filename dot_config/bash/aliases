@@ -17,3 +17,6 @@ alias ac=". assume"
 
 # nvim terminal (clean terminal, no dashboard, triple-ESC for normal mode)
 alias nt="nvim --cmd 'lua vim.g.snacks_dashboard = false' +term +startinsert"
+
+# My public IP address
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com -4"
