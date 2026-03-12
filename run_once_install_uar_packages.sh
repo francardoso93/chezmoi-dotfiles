@@ -14,6 +14,7 @@ case "${OS}" in
           sudo systemctl --now enable systemd-resolved.service
           sudo systemctl --now enable awsvpnclient
           #
+          yay -S ngrok --noconfirm
         fi
 esac
 
