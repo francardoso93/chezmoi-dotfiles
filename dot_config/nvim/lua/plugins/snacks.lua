@@ -8,7 +8,11 @@ return {
       picker = {
         hidden = true,
         ignored = true,
-        exclude = { "node_modules" },
+        sources = {
+          grep = {
+            exclude = { "node_modules" },
+          },
+        },
       },
     },
   },
