@@ -1,0 +1,11 @@
+[Unit]
+Description=Atuin shell history daemon
+After=network.target
+
+[Service]
+ExecStart=%h/.atuin/bin/atuin daemon
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
