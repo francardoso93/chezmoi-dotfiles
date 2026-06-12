@@ -21,4 +21,5 @@
           - cloudflared
           - doctl
           - websocat
+          - kafka
         state: present
