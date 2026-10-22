@@ -12,7 +12,8 @@ install_ansible_on_arch_omarchy() {
 OS="$(uname -s)"
 case "${OS}" in
     Linux*)
-        if [ -f /etc/arch-release ] && [ -d "$HOME/.local/share/omarchy" ]; then
+        # Omarchy 4 (Quattro) installs to /usr/share/omarchy; 3.x used a git checkout in ~/.local/share/omarchy
+        if [ -f /etc/arch-release ] && { [ -d /usr/share/omarchy ] || [ -d "$HOME/.local/share/omarchy" ]; }; then
           sudo pacman -Sy
           install_ansible_on_arch_omarchy
         else
