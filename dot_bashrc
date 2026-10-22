@@ -29,7 +29,8 @@ source "$HOME/.config/bash/functions"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 
-. "$HOME/.local/share/../bin/env"
+# Created by the uv installer (run_once_install_os_pkg_apps.sh); skip until it exists
+[[ -f "$HOME/.local/bin/env" ]] && . "$HOME/.local/bin/env"
 
 . "$HOME/.atuin/bin/env"
 
